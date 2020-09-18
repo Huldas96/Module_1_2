@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: 'Teko', sans-serif;
+}
+
+/* White frame that wraps around the poster */
+
+.poster-frame {
+    background-color: white;
+    width: 50rem;
+    height: 60rem;
+    margin: auto;
+    position: relative;
+}
+
+/* Font styles */
+
+h1 {
+    font-weight: bolder;
+    font-size: 4.937rem;
+    position: absolute;
+    left: 2.3rem;
+    top: 44.83rem;
+    color: rgb(15, 15, 15);
+    -webkit-text-stroke: rgba(149, 82, 194, 0.493);
+    -webkit-text-stroke-width: 0.20rem;
+}
+
+.location-date-time {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 16rem;
+    top: 50rem;
+    color: rgb(67, 38, 82);
+}
+
+.artist-schedule-1 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+
+}
+
+.artist-schedule-2 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+
+}
+
+.ticket-info {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    text-align: right;
+    color: rgb(67, 38, 82);
+}
+
+/* GRID LAYOUT */
+
+.layout-bottom {
+    display: grid;
+    grid-template-columns: 14rem 14rem auto;
+    grid-template-rows: 1.2rem 3rem;
+    max-width: 45rem;
+    margin: 4.6rem auto 0 auto;
+}
+
+.layout-item-1 {
+    grid-row: span 2;
+}
+
+.layout-item-3 {
+    padding-top: 0.6rem;
+    text-align: right;
+}
+
+.layout-bottom img {
+    width: 7rem;
+}
+
+/* This targets the div that wraps around the graphics */
+
+.firework-wrap {
+    background: rgb(143,49,97);
+    background: linear-gradient(0deg, rgba(143,49,97,1) 0%, rgb(22, 29, 58) 40%);
+    width: 45rem;
+    height: 49rem;
+    position: relative;
+    margin: auto;
+}
+
+/* Here we have a whole lot of selectors that targets a lot of divs that I played around with to form a firework in the sky!
+
+    Each one has a variation on top, left and transform skew. 
+    Everyone has position: absolute so they dont have to follow the document flow.
+    That makes it easier for me to position everything excatly how I like it. */
+
+.firework-frag-1 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 4rem;
+    width: 0.4rem;
+    transform: skew(35deg);
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+}
+
+.firework-frag-2 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 4rem;
+    width: 0.4rem;
+    transform: skew(-35deg);
+    position: absolute;
+    top: 5rem;
+    left: 17rem;
+}
+
+.firework-frag-3 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 4rem;
+    width: 0.4rem;
+    transform: skew(-35deg);
+    position: absolute;
+    top: 15rem;
+    left: 8rem;
+}
+
+.firework-frag-4 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 4rem;
+    width: 0.4rem;
+    transform: skew(35deg);
+    position: absolute;
+    top: 15rem;
+    left: 17rem;
+}
+
+.firework-frag-5 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 5rem;
+    width: 0.3rem;
+    position: absolute;
+    top: 17rem;
+    left: 12.6rem;
+}
+
+.firework-frag-6 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 5rem;
+    width: 0.3rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 12.6rem;
+}
+
+.firework-frag-7 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 0.3rem;
+    width: 4.6rem;
+    position: absolute;
+    transform: skew(20deg);
+    top: 11.5rem;
+    left: 3.2rem;
+}
+
+.firework-frag-8 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgba(255,173,17,1) 0%, rgba(255, 172, 17, 0.308) 100%);
+    height: 0.3rem;
+    width: 4.6rem;
+    position: absolute;
+    transform: skew(-20deg);
+    top: 11.5rem;
+    left: 17.3rem;
+}
+
+.firework-frag-9 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 2.5rem;
+    width: 0.6rem;
+    transform: skew(60deg);
+    position: absolute;
+    top: 7.6rem;
+    left: 5.7rem;
+}
+
+.firework-frag-10 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 2.5rem;
+    width: 0.6rem;
+    transform: skew(-60deg);
+    position: absolute;
+    top: 13.6rem;
+    left: 5.7rem;
+}
+
+.firework-frag-11 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 2.5rem;
+    width: 0.6rem;
+    transform: skew(60deg);
+    position: absolute;
+    top: 13.6rem;
+    left: 18.7rem;
+}
+
+.firework-frag-12 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 2.5rem;
+    width: 0.6rem;
+    transform: skew(-60deg);
+    position: absolute;
+    top: 7.6rem;
+    left: 18.7rem;
+}
+
+.firework-frag-13 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 4.5rem;
+    width: 0.3rem;
+    transform: skew(-22deg);
+    position: absolute;
+    top: 16.5rem;
+    left: 10rem;
+}
+
+.firework-frag-14 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 4.5rem;
+    width: 0.3rem;
+    transform: skew(22deg);
+    position: absolute;
+    top: 3.4rem;
+    left: 10rem;
+}
+
+.firework-frag-15 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 4.5rem;
+    width: 0.3rem;
+    transform: skew(-22deg);
+    position: absolute;
+    top: 3.4rem;
+    left: 15.2rem;
+}
+
+.firework-frag-16 {
+    background: rgb(255,173,17);
+    background: radial-gradient(circle, rgb(255, 181, 42) 0%, rgba(245, 182, 66, 0.308) 100%);
+    height: 4.5rem;
+    width: 0.3rem;
+    transform: skew(22deg);
+    position: absolute;
+    top: 16.5rem;
+    left: 15.2rem;
+}
+
+/* Here I made some stars in the sky! I targeted some divs and made little boxes.
+I set the position to absolute to free the stars from the document flow.
+Then I used transform to rotate them 45deg. Then I positioned them using Top and left.*/
+
+.star-1 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 3rem;
+    left: 20rem;
+}
+
+.star-2 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 5rem;
+    left: 34rem;
+}
+
+.star-3 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 8rem;
+    left: 28rem;
+}
+
+.star-4 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 20rem;
+    left: 22rem;
+}
+
+.star-5 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 15rem;
+    left: 35rem;
+}
+
+.star-6 {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(255, 254, 215);
+    transform: rotate(45deg);
+    top: 4rem;
+    left: 2rem;
+}
+
+.star-7 {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: rgba(255, 254, 215, 0.60);
+    transform: rotate(45deg);
+    top: 2rem;
+    left: 5rem;
+}
+
+.star-8 {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: rgba(255, 254, 215, 0.60);
+    transform: rotate(45deg);
+    top: 2rem;
+    left: 41rem;
+}
+
+.star-9 {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: rgba(255, 254, 215, 0.60);
+    transform: rotate(45deg);
+    top: 10rem;
+    left: 30rem;
+}
+
